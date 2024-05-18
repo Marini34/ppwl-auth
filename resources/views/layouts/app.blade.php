@@ -10,18 +10,18 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Fonts -->
-    <link rel="dns-prefetch" href="//fonts.bunny.net">
+    <link rel="dns-prefetch" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
 
     <!-- Scripts -->
-    <!-- @vite(['resources/sass/app.scss', 'resources/js/app.js']) -->
-    <link rel="preload" as="style" href="https://8282496e-30d1-4b6a-b205-54af3de51134-00-31qgygiuk11ck.sisko.replit.dev/build/assets/app-1bd03d06.css" />
-
-      <link rel="modulepreload" href="https://8282496e-30d1-4b6a-b205-54af3de51134-00-31qgygiuk11ck.sisko.replit.dev/build/assets/app-c3828592.js" />
-
-      <link rel="stylesheet" href="https://8282496e-30d1-4b6a-b205-54af3de51134-00-31qgygiuk11ck.sisko.replit.dev/build/assets/app-1bd03d06.css" />
-
-      <script type="module" src="https://8282496e-30d1-4b6a-b205-54af3de51134-00-31qgygiuk11ck.sisko.replit.dev/build/assets/app-c3828592.js"></script>
+  @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+  {{-- <link rel="preload" as="style" href="https://ff38ff51-10d1-4397-801a-ce53bd0c1e6b-00-13gls7ei7dqee.sisko.replit.dev/build/assets/app-D-sv12UV.css" />
+  
+  <link rel="modulepreload" href="https://ff38ff51-10d1-4397-801a-ce53bd0c1e6b-00-13gls7ei7dqee.sisko.replit.dev/build/assets/app-CD_ffoPP.js" />
+  
+  <link rel="stylesheet" href="https://ff38ff51-10d1-4397-801a-ce53bd0c1e6b-00-13gls7ei7dqee.sisko.replit.dev/build/assets/app-D-sv12UV.css" />
+  
+  <script type="module" src="https://ff38ff51-10d1-4397-801a-ce53bd0c1e6b-00-13gls7ei7dqee.sisko.replit.dev/build/assets/app-CD_ffoPP.js"></script> --}}
 </head>
 <body>
     <div id="app">
@@ -62,16 +62,14 @@
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                                    <!-- <a class="dropdown-item" href="{{ route('logout') }}"                                    -->
-                                    <a class="dropdown-item" href="https://8282496e-30d1-4b6a-b205-54af3de51134-00-31qgygiuk11ck.sisko.replit.dev/logout"
-
+                                    <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
+                                        document.getElementById('logout-form').submit();">
                                         {{ __('Logout') }}
                                     </a>
 
-                                    <!-- <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none"> -->
-                                    <form id="logout-form" action="https://8282496e-30d1-4b6a-b205-54af3de51134-00-31qgygiuk11ck.sisko.replit.dev/logout" method="POST" class="d-none">
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                  {{-- <form id="logout-form" action="https://ff38ff51-10d1-4397-801a-ce53bd0c1e6b-00-13gls7ei7dqee.sisko.replit.dev/logout" method="POST" class="d-none"> --}}
 
                                         @csrf
                                     </form>
